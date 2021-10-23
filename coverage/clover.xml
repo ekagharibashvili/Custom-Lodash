@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1634835045823" clover="3.2.0">
-  <project timestamp="1634835045824" name="All files">
-    <metrics statements="110" coveredstatements="110" conditionals="23" coveredconditionals="23" methods="13" coveredmethods="13" elements="146" coveredelements="146" complexity="0" loc="110" ncloc="110" packages="1" files="12" classes="12"/>
+<coverage generated="1634998333878" clover="3.2.0">
+  <project timestamp="1634998333880" name="All files">
+    <metrics statements="156" coveredstatements="156" conditionals="43" coveredconditionals="43" methods="20" coveredmethods="20" elements="219" coveredelements="219" complexity="0" loc="156" ncloc="156" packages="1" files="16" classes="16"/>
     <file name="chunk.js" path="C:\Users\User\Desktop\custom_lodash\src\chunk.js">
       <metrics statements="18" coveredstatements="18" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
       <line num="17" count="3" type="stmt"/>
@@ -48,6 +48,49 @@
       <line num="33" count="4" type="stmt"/>
       <line num="36" count="1" type="stmt"/>
     </file>
+    <file name="dropWhile.js" path="C:\Users\User\Desktop\custom_lodash\src\dropWhile.js">
+      <metrics statements="14" coveredstatements="14" conditionals="16" coveredconditionals="16" methods="1" coveredmethods="1"/>
+      <line num="2" count="4" type="stmt"/>
+      <line num="3" count="4" type="stmt"/>
+      <line num="4" count="4" type="stmt"/>
+      <line num="5" count="12" type="cond" truecount="4" falsecount="0"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="8" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="9" count="3" type="cond" truecount="4" falsecount="0"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="13" count="3" type="stmt"/>
+      <line num="15" count="9" type="cond" truecount="4" falsecount="0"/>
+      <line num="16" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="5" type="stmt"/>
+      <line num="21" count="4" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+    </file>
+    <file name="filter.js" path="C:\Users\User\Desktop\custom_lodash\src\filter.js">
+      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <line num="2" count="3" type="stmt"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="10" count="3" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+    </file>
+    <file name="find.js" path="C:\Users\User\Desktop\custom_lodash\src\find.js">
+      <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <line num="2" count="2" type="stmt"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="10" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="2" type="stmt"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="12" count="9" type="stmt"/>
+      <line num="13" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+    </file>
     <file name="includes.js" path="C:\Users\User\Desktop\custom_lodash\src\includes.js">
       <metrics statements="15" coveredstatements="15" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
       <line num="22" count="4" type="cond" truecount="2" falsecount="0"/>
@@ -65,6 +108,21 @@
       <line num="40" count="1" type="stmt"/>
       <line num="41" count="1" type="stmt"/>
       <line num="46" count="1" type="stmt"/>
+    </file>
+    <file name="map.js" path="C:\Users\User\Desktop\custom_lodash\src\map.js">
+      <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="34" count="3" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="39" count="1" type="stmt"/>
+      <line num="40" count="1" type="stmt"/>
+      <line num="41" count="1" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
+      <line num="43" count="3" type="stmt"/>
+      <line num="44" count="3" type="stmt"/>
+      <line num="46" count="1" type="stmt"/>
+      <line num="49" count="1" type="stmt"/>
     </file>
     <file name="merge.js" path="C:\Users\User\Desktop\custom_lodash\src\merge.js">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>

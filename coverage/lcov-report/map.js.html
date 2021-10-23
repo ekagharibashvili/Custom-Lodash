@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for includes.js</title>
+    <title>Code coverage report for map.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> includes.js</h1>
+        <h1><a href="index.html">All files</a> map.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>17/17</span>
+                <span class='fraction'>13/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>15/15</span>
+                <span class='fraction'>12/12</span>
             </div>
         
             
@@ -102,7 +102,10 @@
 <a name='L43'></a><a href='#L43'>43</a>
 <a name='L44'></a><a href='#L44'>44</a>
 <a name='L45'></a><a href='#L45'>45</a>
-<a name='L46'></a><a href='#L46'>46</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -123,76 +126,82 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">/**
-  * @category Collection
-  * @param {Array|Object|string} collection The collection to inspect.
-  * @param {*} value The value to search for.
-  * @param {number} [fromIndex=0] The index to search from.
-  * @returns {boolean} Returns `true` if `value` is found, else `false`.
-  * @example
-  *
-  * _.includes([1, 2, 3], 1);
-  * // =&gt; true
-  *
-  * _.includes([1, 2, 3], 1, 2);
-  * // =&gt; false
-  *
-  * _.includes({ 'a': 1, 'b': 2 }, 1);
-  * // =&gt; true
-  *
-  * _.includes('abcd', 'bc');
-  * // =&gt; true
-  */
-function includes(collection, value, fromIndex = 0) {
-    if (typeof collection === 'string') {
-        return collection.slice(fromIndex).includes(value);
-    }
-    else if(Array.isArray(collection)) {
-      let length = 0;
-        while (collection[length] !== undefined) {
-            length++;
-        } 
-        for(let i = fromIndex; i&lt;length; i++) {
-            return collection[i] === value;
-        }
-    }
-    else {
-        let values = Object.values(collection);
-        let length = 0;
-        while (values[length] !== undefined) {
-            length++;
-        }
-            for (let i = fromIndex; i &lt; length; i++) {
-                return values[i] === value;
-        }
-    } 
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">  /**
+ * Creates an array of values by running each element in collection thru iteratee. The iteratee is invoked with three arguments:
+ * (value, index|key, collection).
+ * **Note:** This method mutates `object`.
+ *
+ * @category array
+ * collection (Array|Object): The collection to iterate over.
+ * [iteratee=_.identity] (Function): The function invoked per iteration.
+ * @returns array
+ * @example
+ * function square(n) {
+  return n * n;
+}
+ 
+_.map([4, 8], square);
+// =&gt; [16, 64]
+ 
+_.map({ 'a': 4, 'b': 8 }, square);
+// =&gt; [16, 64] (iteration order is not guaranteed)
+ 
+var users = [
+  { 'user': 'barney' },
+  { 'user': 'fred' }
+];
+ 
+// The `_.property` iteratee shorthand.
+_.map(users, 'user');
+// =&gt; ['barney', 'fred']
+ * */
+&nbsp;
+function myLength(array) {
+  let length = 0;
+  while (array[length] !== undefined) {
+    length += 1;
+  }
+  return length;
 }
 &nbsp;
-module.exports = includes;</pre></td></tr></table></pre>
+const map = (array, callback) =&gt; {
+  const result = [];
+  const length = myLength(array);
+  for (let index = 0; index &lt; length; index += 1) {
+    const value = array[index];
+    result[index] = callback(value, index, array);
+  }
+  return result;
+};
+&nbsp;
+module.exports = map;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
